@@ -20,5 +20,10 @@ spec:
       containers:
       - image: hjh/microservice-k8s
         name: microservice
-        resources: {}
+        resources:
+          requests:
+            memory: "512Mi"
+          limits:
+            memory: "768Mi"
+
 status: {}
