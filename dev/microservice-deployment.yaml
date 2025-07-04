@@ -25,5 +25,7 @@ spec:
             memory: "512Mi"
           limits:
             memory: "768Mi"
-
+        envFrom:
+          - configMapRef:
+              name: microservice
 status: {}
