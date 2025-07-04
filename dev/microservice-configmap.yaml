@@ -4,4 +4,4 @@ metadata:
   creationTimestamp: null
   name: microservice
 data:
-  backendServiceClient.message: K8K8K8
+  backendServiceClient.message: CM-BSC-message
