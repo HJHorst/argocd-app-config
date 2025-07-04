@@ -25,7 +25,11 @@ spec:
             memory: "512Mi"
           limits:
             memory: "768Mi"
-        envFrom:
-          - configMapRef:
-              name: microservice
+        volumeMounts:
+          - name: config-volume
+            mountPath: /workspace/config
+      volumes:
+        - name: config-volume
+          configMap:
+            name: microservice
 status: {}
