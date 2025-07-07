@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: microservice-properties
+data:
+  application.properties: |
+    base.some.prop=theValue
+  application-kubernetes.properties: |
+    backend.base-url=http://backend:8080
+    some.extra.k8s.prop=someExtraValue
